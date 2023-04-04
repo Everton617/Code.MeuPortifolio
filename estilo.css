@@ -242,12 +242,8 @@ footer p{
         display: block;
     }
 
-    .card-titulo{
-        padding-left: 60px;
-    }
-
     .card-titulo span{
-        padding-left: 40px;
+        padding-left: 60px;
     }
 }
 
