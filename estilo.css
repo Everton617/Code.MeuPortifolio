@@ -1,10 +1,7 @@
-
-
-
 @import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
 
 
-.recursos{
+.recursos {
     padding-top: 100px;
     padding-bottom: 100px;
 }
@@ -14,19 +11,21 @@ html {
     font-family: 'Abel', sans-serif;
 }
 
-
-
-header h2{
-    color: rgb(138, 138, 138);
-    font-weight: 400;
+body {
+    background: #13131F;
 }
 
-.icone{
-    color: white;
+header h2 {
+    color: rgb(189, 186, 186);
+    font-weight: 600;
 }
 
-.navbar-topo{
-    background: rgb(0, 0, 0) ;
+.icone {
+    color: rgb(113, 0, 206);
+}
+
+.navbar-topo {
+    background: #13131F;
 }
 
 
@@ -44,7 +43,7 @@ header h2{
     content: " ";
     width: 0%;
     height: 4px;
-    background-color: #e00000;
+    background-color: #6100e0;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -57,47 +56,48 @@ header h2{
 
 
 
-#recursos{
-    background: rgb(0, 0, 0);
+#recursos {
+    background: #13131F;
     color: white;
     border-bottom: 5px solid rgba(68, 0, 255, 0.322);
-    
+
 }
 
-.card-titulo h1{
+.card-titulo h1 {
     color: rgb(255, 255, 255);
+    font-weight: 700;
     padding-top: 20px;
     overflow-y: hidden;
     margin-left: 50px;
     font-family: 'Abel', sans-serif;
 }
 
-.card-titulo p{
+.card-titulo p {
     font-size: 30px;
+    font-weight: 700;
     margin-left: 67px;
     overflow-y: hidden;
     font-family: 'Abel', sans-serif;
 }
 
-.card-titulo span{
+.card-titulo span {
     color: rgb(133, 185, 201);
     font-size: 20px;
 }
 
-.btn-recursos{
+.btn-recursos {
     width: 200px;
-    background-image: linear-gradient(45deg,rgba(17, 0, 255, 0.486),#e0000069);
+    background-image: linear-gradient(45deg, rgb(65, 36, 133), #6300e6);
     margin-top: 5px;
-    transition-duration: 1s;
+    transition-duration: 0.5s;
 }
 
-.btn-recursos:hover{
-    background-image: linear-gradient(45deg,rgb(17, 0, 255),#e00000);
-    transition-duration: 2s;
+.btn-recursos:hover {
+    background-image: linear-gradient(45deg, rgb(65, 36, 133), #4a1e6e);
 
 }
 
-.box-img{
+.box-img {
     margin-left: 80px;
     height: 200px;
     width: 200px;
@@ -107,20 +107,20 @@ header h2{
     transition: background-image 1s ease-in-out;
 }
 
-.box-img:hover{
+.box-img:hover {
     background-image: url(img/avatar2.png);
     transition: background-image 1s;
-    
+
 }
 
 .box-img:not(:hover) {
     transition: background-image 1s ease-in-out;
     background-image: url(img/avatarpng.png);
-  }
+}
 
 
 
-.box-content h1{
+.box-content h1 {
     padding-top: 10px;
     font-size: 40px;
     overflow-y: hidden;
@@ -128,162 +128,284 @@ header h2{
 
 
 
-.card-apresentation{
+.card-apresentation {
     padding-top: 20px;
 }
 
-.card-apresentation h2{
-    border-top: solid 1px rgb(172, 51, 51);
+.card-apresentation h2 {
+    border-top: solid 1px rgb(98, 51, 172);
     font-size: 35px;
     padding-top: 40px;
-    padding-bottom:30px;
+    padding-bottom: 30px;
     font-family: 'Abel', sans-serif;
 }
 
-.card-apresentation p{
+.card-apresentation p {
     font-size: 20px;
 }
 
+/* Configuração Crds Skills */
 
-#projetos{
-    padding-top: 60px;
-}
-
-#projetos h1{
-    font-family: 'Abel', sans-serif;
-    font-weight: bold;
-    font-size: 44px;
-}
-
-.navbar-brand i{
+.skills h2 {
     color: white;
-    font-size: 20px;
+    padding: 80px 80px;
 }
 
-
-.skills{
-    overflow-y: hidden;
-    padding-bottom: 50px;
-    padding-top: 100px;
-}
-
-.skills h1{
-    font-size: 44px;
-    font-weight: bold;
-    padding-top: 40px;
-    overflow-y: hidden;
-    padding-bottom: 40px;
-    font-family: 'Abel', sans-serif;
+.container_skills .row {
+    justify-content: space-between;
 
 }
 
-.skills i {
-    font-size: 70px;
-    padding-left: 20px;
-    padding-right: 10px;
-
-    
-}
-
-.skills .fa-html5:hover{
-    transition: 0.5s;
-    cursor: pointer;
-    transform: scale(1.2);
-    overflow-y: hidden;
-    color: rgb(255, 30, 0);
-}
-
-
-.skills .fa-css3:hover{
-    transition: 0.5s;
-    cursor: pointer;
-    transform: scale(1.2);
-    overflow-y: hidden;
-    color: rgb(0, 89, 255);
-}
-
-.skills .fa-square-js:hover{
-    transition: 0.5s;
-    cursor: pointer;
-    transform: scale(1.2);
-    overflow-y: hidden;
-    color: rgb(255, 230, 0);
-}
-
-.skills .fa-bootstrap:hover{
-    transition: 0.5s;
-    cursor: pointer;
-    transform: scale(1.2);
-    overflow-y: hidden;
-    color: rgb(119, 0, 255);
-}
-
-
-
-footer{
-    background: rgba(5, 5, 41, 0.774);
-    height: 100px;
+#skills {
     text-align: center;
-    overflow-y: hidden;
+
 }
 
-footer p{
+.cards {
+    background: #212121;
+    height: 132px;
+    border-top-left-radius: 15px;
+    transition: 0.5s;
+    width: 120px;
+}
+
+.cards p {
+    padding-top: 10px;
+    color: #8257E6;
+}
+
+.cards img {
+    width: 70px;
+    height: 70px;
+}
+
+.cards:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    
+}
+
+
+
+
+
+
+
+/* Area Projetos */
+
+.title-projetos{
+    text-align: center;
+    color: white;
+    text-align: center;
+    padding-bottom: 80px;
+    padding-top: 50px;
+    font-size: 40px;
+}
+
+
+
+.legenda-projeto {
+    position: relative;
+    bottom: -30%;
+    left: 40%;
+}
+
+
+.legenda-projeto p {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.icon {
+    color: #926ceb;
+    font-size: 26px;
+
+
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+
+.img-projeto {
+    width: 700px;
+
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+.image-container:hover .overlay {
+    opacity: 0;
+    display: none;
+
+}
+
+.image-container:hover {
+    cursor: pointer;
+    transform: scale(1.3);
+    z-index: 2;
+}
+
+.legenda-imagem {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: rgb(36, 35, 35);
+    color: #fff;
+    font-size: 14px;
+    padding: 1px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    z-index: -1;
+
+}
+
+.link_projeto {
+    text-decoration: none;
+    color: #ffffff;
+    height: 20px;
+    width: 80px;
+    background: #6300e6;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 11px;
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+.link_projeto:hover{
+    text-decoration: none;
+}
+
+.link_git {
+    color: #6300e6;
+}
+
+.legenda-imagem P {
+    font-size: 10px;
+    padding-left: 5px;
+    font-weight: 600;
+    padding-top: 5px;
+}
+
+
+
+.fa-github {
+    font-size: 20px;
+    padding-top: 5px;
+}
+
+.image-container:hover .legenda-imagem {
+    opacity: 1;
+    z-index: 1;
+}
+
+
+
+
+.navbar-brand i {
+    color: white;
+    font-size: 20px;
+}
+
+
+ /* Footer*/
+
+
+footer {
+    background:#13131F;
+    height: 700px;
+    text-align: center;
+}
+
+footer h2{
+    color: rgb(255, 255, 255);
+    padding-top:100px ;
+    padding-bottom: 60px;
+}
+
+.footer-feature:hover{
+    transform: scale(1.1);
+}
+
+.footer-feature a{
+    text-decoration: none;
+}
+
+.footer-feature i{
+    color:#8257E6;
+    font-size: 50px;
+}
+
+.footer-feature p{
     color: white;
 }
 
-
-@media (max-width:575.98px){
-    .btn-recursos{
-        margin-bottom: 10px;
-        margin-left: 80px;
-    }
-    
-    .conteudo-recursos{
-        display: block;
-    }
-
-    .card-titulo span{
-        padding-left: 60px;
-    }
-}
-
-    
-
-
-
-@media (min-width: 576px) and (max-width:767.98px){
-    
-    .btn-recursos{
-        margin-bottom: 10px;
-    }
-    
-    .conteudo-recursos{
-        display: block;
-    }
-
-    .card-titulo{
-        padding-left: 70px;
-    }
-    
+.style_p{
+    padding-top: 10px;
+    font-weight: bolder;
 }
 
 
 
 
-
-@media (min-width: 768px) and (max-width:991.98px) { 
-    
-
-    .card-titulo span{
-        margin-left: 30px;
+@media (max-width:575.98px) {
+    .container_skills{
+        display: flex;
+        flex-direction: row;
+        
     }
-    .btn-recursos{
-        margin-bottom: 10px;
-        margin-left: 50px;
-    }
+}
+
+
+
+@media (min-width: 576px) and (max-width:767.98px) {
 
    
 
+    .legenda-projeto {
+        position: relative;
+        bottom: -20%;
+        left: 20%;
+    }
+    
+
+}
+
+
+
+
+
+@media (min-width: 768px) and (max-width:991.98px) {
+
+
+    .legenda-projeto {
+        position: relative;
+        bottom: -30%;
+        left: 30%;
+    }
+    
+
+
+
 }
 
 
@@ -291,14 +413,7 @@ footer p{
 
 
 
-@media (min-width:992px) and (max-width: 1199.98px) { 
-    
-    
-
-}
+@media (min-width:992px) and (max-width: 1199.98px) {}
 
 
-@media (min-width:1200px) {
-        
-
- }
+@media (min-width:1200px) {}
