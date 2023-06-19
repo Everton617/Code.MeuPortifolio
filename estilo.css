@@ -473,6 +473,10 @@ footer h2{
     .legenda-imagem{
         height: 60px;
     }
+    .box-img{
+        margin: auto;
+        margin-right: 180px;
+    }
     
 }
 
@@ -483,5 +487,9 @@ footer h2{
     }
     .legenda-imagem{
         height: 65px;
+    }
+    .box-img{
+        margin: auto;
+        margin-right: 250px;
     }
 }
