@@ -1,4 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+@font-face {
+    font-family: 'font-titulo';
+    src: url(fonts/SF-Pro-Text-Bold.otf);
+}
+
 *{
     overflow-x: hidden;
 }
@@ -20,6 +26,7 @@ body {
 header h2 {
     color: rgb(189, 186, 186);
     font-weight: 600;
+    font-family: 'font-titulo'
 }
 
 .icone {
@@ -65,49 +72,15 @@ header h2 {
 
 }
 
-.card-titulo h1 {
-    color: rgb(255, 255, 255);
-    font-weight: 700;
-    padding-top: 20px;
-    overflow-y: hidden;
-    margin-left: 50px;
-    font-family: 'Abel', sans-serif;
-}
-
-.card-titulo p {
-    font-size: 30px;
-    font-weight: 700;
-    margin-left: 67px;
-    overflow-y: hidden;
-    font-family: 'Abel', sans-serif;
-}
-
-.card-titulo span {
-    color: rgb(133, 185, 201);
-    font-size: 20px;
-}
-
-.btn-recursos {
-    width: 200px;
-    background-image: linear-gradient(45deg, rgb(65, 36, 133), #6300e6);
-    margin-top: 5px;
-    transition-duration: 0.5s;
-}
-
-.btn-recursos:hover {
-    background-image: linear-gradient(45deg, rgb(65, 36, 133), #4a1e6e);
-
-}
-
 .box-img {
-    height: 200px;
-    width: 200px;
+    height: 400px;
+    width: 400px;
     border-radius: 100px;
-    background-image: url(img/avatarpng.png);
+    background-image: url(img/avatar3.png);
     background-size: cover;
     transition: background-image 1s ease-in-out;
+    
 }
-
 .box-img:hover {
     background-image: url(img/avatar2.png);
     transition: background-image 1s;
@@ -116,8 +89,61 @@ header h2 {
 
 .box-img:not(:hover) {
     transition: background-image 1s ease-in-out;
-    background-image: url(img/avatarpng.png);
+    background-image: url(img/avatar3.png);
 }
+
+
+.card-apresentation h1 {
+    margin-top: 50px;
+    font-size: 53px;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    padding-top: 20px;
+    overflow-y: hidden;
+    font-family: 'font-titulo';
+}
+.lastname{
+    color: rgba(59, 66, 167, 0.699);
+    display:inline;
+}
+
+.card-apresentation p {
+    font-size: 20px;
+    overflow-y: hidden;
+    font-family: 'Abel', sans-serif;
+}
+
+.card-apresentation span {
+    color: rgb(133, 185, 201);
+    font-size: 30px;
+    font-family: 'font-titulo'
+}
+
+.link{
+    display: flex;
+    
+}
+
+.btn-recursos {
+    width: 60px;
+    height: 50px;
+    margin: 10px;
+    overflow-y: hidden;
+    background-image: linear-gradient(45deg, rgb(62, 56, 73), #6300e6);
+    margin-top: 20px;
+    padding-top: 10px;
+    transition-duration: 0.5s;
+    border-radius: 100px;
+}
+
+.btn-recursos:hover {
+    background-image: linear-gradient(45deg, rgb(65, 36, 133), #4a1e6e);
+}
+
+.btn-recursos i{
+    padding-left: 5px;
+}
+
 
 
 
@@ -138,7 +164,7 @@ header h2 {
     font-size: 35px;
     padding-top: 40px;
     padding-bottom: 30px;
-    font-family: 'Abel', sans-serif;
+
 }
 
 .card-apresentation p {
@@ -150,6 +176,8 @@ header h2 {
 .skills h2 {
     color: white;
     padding: 80px 80px;
+    font-family: 'font-titulo';
+    font-size: 40px;
 }
 
 .container_skills .row {
@@ -197,6 +225,63 @@ header h2 {
 }
 
 
+/* Area Certificados */
+
+.certificates h2{
+    text-align: center;
+    color: white;
+    padding: 80px 80px;
+    font-family: 'font-titulo';
+    font-size: 40px;
+}
+
+.conquistas li{
+    font-family: 'font-titulo';
+    margin: 10px;
+    color: white;
+}
+
+.conquistas-last li{
+    font-family: 'font-titulo';
+    margin: 10px;
+    color: white;
+}
+
+
+.container_certificates{
+    justify-content: center;
+    
+}
+.certificate-cards{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; 
+    overflow: hidden; 
+}
+
+.certificate-card-last{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: hidden; 
+}
+
+.img-certificate{
+    transition: transform 0.5s; 
+}
+
+.container-img{
+    overflow: hidden; 
+}
+.container-img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.9s ease;
+}
+
+
+
+
 /* Area Projetos */
 
 .cards_projetos{
@@ -239,6 +324,7 @@ header h2 {
     display: inline-block;
     transition: 0.5s;
     overflow-y: hidden;
+    
 }
 
 
@@ -343,7 +429,7 @@ footer {
     background:#13131F;
     height: 700px;
     text-align: center;
-    overflow-y: hidden;
+    overflow: hidden; 
 }
 
 footer h2{
@@ -354,6 +440,11 @@ footer h2{
 
 .footer-feature:hover{
     transform: scale(1.1);
+    overflow-y: hidden;
+}
+
+.footer-feature{
+    overflow-y: hidden;
 }
 
 .footer-feature a{
@@ -372,16 +463,40 @@ footer h2{
 .style_p{
     padding-top: 10px;
     font-weight: bolder;
+    overflow-y: hidden;
+}
+
+.box-footers{
+    overflow: hidden; 
 }
 
 
 
 
 @media (max-width:575.98px) {
-    .box-img{
-        margin: auto;
-        margin-left: 100px;
+
+    .certificate-cards{
+        display: block;
     }
+
+    .certificate-card-last{
+        display: flex;
+        flex-direction: column; 
+    }
+
+    .conquistas-last{
+        order: 2;
+    }
+    
+
+    .conquistas li{
+        font-family: 'font-titulo';
+        margin: 10px;
+        color: white;
+        font-size: 16px;
+    }
+
+   
 
     .card-titulo{
         text-align: center;
@@ -416,80 +531,28 @@ footer h2{
 
 @media (min-width: 576px) and (max-width:767.98px) {
 
-    .box-img{
-        margin: auto;
-        margin-left: 200px;
-    }
-
-    .card-titulo{
-        text-align: center;
-    }
-    .legenda-projeto {
-        position: relative;
-        bottom: -20%;
-        left: 20%;
-    }
-    
-    .legenda-imagem{
-        height: 50px;
-    }
-   
 
 }
-
-
 
 
 
 @media (min-width: 768px) and (max-width:991.98px) {
     
-    .box-img{
-        margin: auto;
-        margin-left: 280px;
-    }
-
-    .card-titulo{
-        text-align: center;
-    }
-    .legenda-projeto {
-        position: relative;
-        bottom: -30%;
-        left: 30%;
-    }
-    
-    .legenda-imagem{
-        height: 50px;
-    }
-
 
 }
-
-
-
-
-
 
 @media (min-width:992px) and (max-width: 1199.98px) {
-    .legenda-imagem{
-        height: 60px;
-    }
-    .box-img{
-        margin: auto;
-        margin-right: 180px;
+    .img-certificate {
+        height: 300px;
+        
     }
     
 }
 
-
 @media (min-width:1200px) {
-    .img-fluid{
-        height: 250px;
+    .img-certificate {
+        height: 350px;
+        
     }
-    .legenda-imagem{
-        height: 65px;
-    }
-    .box-img{
-        margin: auto;
-        margin-right: 250px;
-    }
+  
 }
