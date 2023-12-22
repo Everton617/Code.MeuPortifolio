@@ -430,6 +430,7 @@ footer {
     height: 700px;
     text-align: center;
     overflow: hidden; 
+    margin-bottom: 20px;
 }
 
 footer h2{
@@ -454,6 +455,7 @@ footer h2{
 .footer-feature i{
     color:#8257E6;
     font-size: 50px;
+    overflow-y: hidden;
 }
 
 .footer-feature p{
